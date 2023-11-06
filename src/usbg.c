@@ -54,6 +54,7 @@ extern struct usbg_function_type usbg_f_type_hid;
 extern struct usbg_function_type usbg_f_type_uac2;
 extern struct usbg_function_type usbg_f_type_uvc;
 extern struct usbg_function_type usbg_f_type_printer;
+extern struct usbg_function_type usbg_f_type_accessory;
 
 /**
  * @var function_types
@@ -77,6 +78,7 @@ struct usbg_function_type* function_types[] = {
 	[USBG_F_UAC2] = &usbg_f_type_uac2,
 	[USBG_F_UVC] = &usbg_f_type_uvc,
 	[USBG_F_PRINTER] = &usbg_f_type_printer,
+	[USBG_F_ACCESSORY] = &usbg_f_type_accessory,
 };
 
 ARRAY_SIZE_SENTINEL(function_types, USBG_FUNCTION_TYPE_MAX);
